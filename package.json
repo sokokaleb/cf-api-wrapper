@@ -1,0 +1,35 @@
+{
+  "name": "cf-api-wrapper",
+  "version": "1.0.0",
+  "description": "Node.js wrapper for Codeforces API.",
+  "main": "src/cf-api-wrapper.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --timeout 300000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sokokaleb/cf-api-wrapper.git"
+  },
+  "keywords": [
+    "codeforces",
+    "wrapper"
+  ],
+  "author": "Pusaka Kaleb Setyabudi <sokokaleb@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/sokokaleb/cf-api-wrapper/issues"
+  },
+  "homepage": "https://github.com/sokokaleb/cf-api-wrapper",
+  "devDependencies": {
+    "eslint": "~1.10.3",
+    "chai": "~3.5.0",
+    "mocha": "~2.4.5",
+    "chai-as-promised": "~5.2.0"
+  },
+  "dependencies": {
+    "dotenv": "~2.0.0",
+    "request-promise": "~2.0.0",
+    "randomstring": "~1.1.3",
+    "js-sha512": "~0.2.2",
+    "lodash": "~4.1.0"
+  }
+}
