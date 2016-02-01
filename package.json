@@ -2,7 +2,7 @@
   "name": "cf-api-wrapper",
   "version": "1.0.1",
   "description": "Node.js wrapper for Codeforces API.",
-  "main": "src/cf-api-wrapper.js",
+  "main": "./cf-api-wrapper.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --timeout 300000"
   },
