@@ -17,6 +17,7 @@ querystring.escape = function (str) {
 };
 
 var CF_API_URL = 'http://codeforces.com/api';
+var DEFAULT_WRAPPER_TIMEOUT = 60000;
 
 /**
  * Generates URL for any request to Codeforces API.
@@ -85,6 +86,7 @@ var sendRequest = function (target, requiredArgs, args) {
   };
 
   return request(requestOpt)
+    .timeout(process.env.WRAPPER_TIMEOUT || DEFAULT_WRAPPER_TIMEOUT)
     .then(function (result) {
       return result.body;
     });

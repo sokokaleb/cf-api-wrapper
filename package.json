@@ -1,6 +1,6 @@
 {
   "name": "cf-api-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js wrapper for Codeforces API.",
   "main": "src/cf-api-wrapper.js",
   "scripts": {
@@ -18,6 +18,7 @@
   "bugs": {
     "url": "https://github.com/sokokaleb/cf-api-wrapper/issues"
   },
+  "license": "MIT",
   "homepage": "https://github.com/sokokaleb/cf-api-wrapper",
   "devDependencies": {
     "eslint": "~1.10.3",

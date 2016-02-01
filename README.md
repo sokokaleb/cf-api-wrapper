@@ -1,4 +1,4 @@
-# cf-api-wrapper: A Wrapper for [Codeforces API](http://codeforces.com/api/help)
+# cf-api-wrapper: A Wrapper for [Codeforces API](http://codeforces.com/api/help) [![Build Status](https://travis-ci.org/sokokaleb/cf-api-wrapper.svg?branch=master)](https://travis-ci.org/sokokaleb/cf-api-wrapper)
 
 cf-api-wrapper is a wrapper for Codeforces API which provides an easy way to use it using Node.js.
 
@@ -27,7 +27,7 @@ caw.user.info({handles: '14L'})
 
 As you see each function returns a `Promise`, which later can be handled by using `.then`, `.catch`, `.error`, etc.
 
-Every function has a timeout of 60 seconds, after which it will throw an `Promise.TimeoutError` error. This timeout is necessary as Codeforces API 
+Every function has a timeout of 60 seconds, after which it will throw an `Promise.TimeoutError` error. The timeout is necessary as Codeforces API may not respond with the correct JSON/not responding at all because of several reasons such as the JSON object is too big, or any other reason.
 
 ## List of Functions
 
@@ -65,3 +65,11 @@ Parameters: `handle` (required)
 
 #### user.status
 Parameters: `handle` (required), `from`, `count`
+
+## Maintainer(s)
+
+The tool is currently maintained by Pusaka Kaleb Setyabudi ([@sokokaleb](http://github.com/sokokaleb)).
+
+## License
+
+The tool is licensed under MIT License.
