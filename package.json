@@ -1,6 +1,6 @@
 {
   "name": "cf-api-wrapper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node.js wrapper for Codeforces API.",
   "main": "./cf-api-wrapper.js",
   "scripts": {
