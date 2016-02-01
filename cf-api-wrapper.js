@@ -4,9 +4,11 @@
 
 require('dotenv').config();
 var _ = require('lodash');
+var Promise = require('bluebird');
 var querystring = require('querystring');
 var randomstring = require('randomstring');
-var request = require('request-promise');
+var request = Promise.promisify(require('request'));
+Promise.promisifyAll(request);
 var sha512 = require('js-sha512').sha512;
 
 // Don't escape any character. It will break the handles parameter.
@@ -82,7 +84,10 @@ var sendRequest = function (target, requiredArgs, args) {
     json: true
   };
 
-  return request(requestOpt);
+  return request(requestOpt)
+    .then(function (result) {
+      return result.body;
+    });
 };
 
 module.exports = {

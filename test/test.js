@@ -373,4 +373,3 @@ describe('Codeforces API Wrapper', function () {
     });
   });
 });
-
